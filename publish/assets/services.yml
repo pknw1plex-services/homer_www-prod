@@ -1,0 +1,118 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/search for icons options
+# Optional: Use external configuration file.
+# Using this will ignore remaining config in this file
+# externalConfig: https://example.com/server-luci/config.yaml
+title: "Admin Portal"
+subtitle: "pknw1"
+documentTitle: "Links" # Customize the browser tab text
+logo: "https://www.pknw1.co.uk/assets/images/logo-stacked-511x282.png"
+header: true # Set to false to hide the header
+footer: 'pknw1'
+columns: "3" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+connectivityCheck: true # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example).
+defaults:
+  layout: columns # Either 'columns', or 'list'
+  colorTheme: dark 
+theme: default # 'default' or one of the themes available in 'src/assets/themes'.
+# Here is the exhaustive list of customization parameters
+# However all value are optional and will fallback to default if not set.
+# if you want to change only some of the colors, feel free to remove all unused key.
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#424242"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+    background-image: "/assets/your/light/bg.png" # prefix with your sub subpath if any (ex: /homer/assets/...)
+  dark:
+    highlight-primary: "#232323"
+    highlight-secondary: "#e5a00d"
+    highlight-hover: "#232323"
+    background: "#232323"
+    card-background: "#2b2b2b"
+    text: "#e5a00d"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#e5a00d"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+    background-image: "/assets/your/dark/bg.png" # prefix with your sub subpath if any (ex: /homer/assets/...)
+# Optional message
+
+message:
+  title: Self Hosted Services   
+  style: "is-warning"
+  icon: "fa fa-exclamation-triangle"
+  content:
+    <div>
+      <a href="https://requests.pkn1.co.uk">
+        <img src="https://www.pknw1.co.uk/assets/images/logo-stacked-511x282.png?h=220"/>
+      </a>
+    </div>
+  # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
+  # mapping: # allows to map fields from the remote format to the one expected by Homer
+  #   title: 'id' # use value from field 'id' as title
+  #   content: 'value' # value from field 'value' as content
+  # refreshInterval: 10000 # Optional: time interval to refresh message
+  #
+  # Real example using chucknorris.io for showing Chuck Norris facts as messages:
+  # url: https://api.chucknorris.io/jokes/random
+  # mapping:
+  #   title: 'id'
+  #   content: 'value'
+  # refreshInterval: 10000
+  #style: "is-error"
+  #title: "Optional message!"
+  #icon: "fa fa-exclamation-triangle"
+  # The content also accepts HTML content, so you can add divs, images or whatever you want to make match your needs.
+  #content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: pknw1.co.uk
+    icon: "fab fa-github"
+    url: "https://www.pknw1.co.uk"
+    target: "_blank" # optional html tag target attribute
+  - name: "Users Dash"
+    icon: "fa-brands fa-docker"
+    url: "https://dashboard.pknw1.co.uk"
+  - name: "Self Hosted"
+    icon: "fas fa-file-alt"
+    url: "#services"
+  - name: "Main Page"
+    icon: "fas fa-file-alt"
+    url: "#config"
+services:
+  - name: Server Apps
+    icon: "fas fa-code-branch"
+    items:
+      - name: "Plex"
+        subtitle:
+        tag: server,self-hosted
+        icon:
+        tagstyle: "is-medium is-info"
+        logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://app.plex.tv/desktop"
+        target: "_blank"
+  - name: IRL
+    icon: "fa-solid fa-cloud-sun-rain"
+    items:
+      - name: "Plex"
+        subtitle:
+        tag: server,self-hosted
+        icon:
+        tagstyle: "is-medium is-info"
+        logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://app.plex.tv/desktop"
+        target: "_blank" 

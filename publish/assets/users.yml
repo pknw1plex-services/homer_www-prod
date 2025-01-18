@@ -1,0 +1,171 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/search for icons options
+title: "PKNW1"
+subtitle: "User Apps"
+documentTitle: "pknw1.co.uk - User Apps" # Customize the browser tab text
+logo: "assets/images/pknw1-logo-128x77.png"
+header: false # Set to false to hide the header
+footer: 'pknw1'
+columns: "4" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+connectivityCheck: false # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example).
+defaults:
+  layout: columns # Either 'columns', or 'list'
+  colorTheme: dark 
+    #stylesheet:
+    #  - "/assets/style.css"
+theme: default # 'default' or one of the themes available in 'src/assets/themes'.
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#424242"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+    background-image: "/assets/your/light/bg.png" # prefix with your sub subpath if any (ex: /homer/assets/...)
+  dark:
+    highlight-primary: "#232323"
+    highlight-secondary: "#e5a00d"
+    highlight-hover: "#232323"
+    background: "#232323" #"#131313"
+    card-background: "#2b2b2b"
+    text: "#e5a00d"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#e5a00d"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#e5a00d"
+    link-hover: "#ff0000"
+    background-image: "/assets/your/dark/bg.png" # prefix with your sub subpath if any (ex: /homer/assets/...)
+
+  # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
+  # mapping: # allows to map fields from the remote format to the one expected by Homer
+  #   title: 'id' # use value from field 'id' as title
+  #   content: 'value' # value from field 'value' as content
+  # refreshInterval: 10000 # Optional: time interval to refresh message
+  #
+  # Real example using chucknorris.io for showing Chuck Norris facts as messages:
+  # url: https://api.chucknorris.io/jokes/random
+  # mapping:
+  #   title: 'id'
+  #   content: 'value'
+  # refreshInterval: 10000
+  #style: "is-error"
+  #title: "Optional message!"
+  #icon: "fa fa-exclamation-triangle"
+  # The content also accepts HTML content, so you can add divs, images or whatever you want to make match your needs.
+  #content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: ""
+    icon: "fa-solid fa-rocket"
+    url: "#"
+  - name: ""
+    icon: "fa-solid fa-unlock"
+    url: "#users"
+  - name: ""
+    icon: "fa-solid fa-lock"
+    url: "https://admin.pknw1.co.uk"
+  - name: ""
+    icon: "fa-solid fa-address-book"
+    url: "#contact"
+  - name: ""
+    icon: "fa-solid fa-code"
+    url: "#dev"
+  - name: ""
+    icon: "fa-solid fa-laptop-file"
+    url: "#professional"
+  - name: ""
+    icon: "fa-solid fa-film"
+    url: "#notflix"
+services:
+  - name: Web Content
+    icon: "fas fa-code-branch"
+    items:
+      - name: "pknw1.co.uk"
+        subtitle: "My Personal WWW"
+        logo: "https://www.pknw1.co.uk/assets/images/icon-128x77.png"
+        url: "https://www.pknw1.co.uk"
+        target: "_blank"
+      - name: "Github (Main)"
+        subtitle: "Main Personal Repos"
+        logo: "https://logosmarcas.net/wp-content/uploads/2020/12/GitHub-Simbolo.png"
+        url: "https://github.com/pknw1"
+        target: "_blank"
+      - name: "Github (Project Orgs)"
+        subtitle: "Multiple Repos under Orgs"
+        logo: "https://logodix.com/logo/64442.png"
+        url: "https://github.com/search?q=pknw1&type=users"
+        target: "_blank"
+      - name: "Docker Hub"
+        subtitle: "Public Container Images"
+        logo: "https://logos-world.net/wp-content/uploads/2021/02/Docker-Logo-2015-2017.png"
+        url: "https://hub.docker.com/u/pknw1"
+        target: "_blank"
+      - name: "Bookstack"
+        subtitle: "Documentation"
+        logo: "https://cdn-icons-png.flaticon.com/512/3389/3389081.png"
+        url: "https://bookstack.pknw1.co.uk"
+        target: "_blank"
+
+  - name: Professional Profiles
+    icon: "fas fa-code-branch"
+    items:
+      - name: "LinkedIn"
+        subtitle: "Professional Social Site"
+        logo: "https://www.pngarts.com/files/7/Linkedin-Logo-PNG-Download-Image.png"
+        url: "https://linkedin.com/in/pknw1"
+        target: "_blank"
+      - name: "Cord.co"
+        subtitle: "Direct Connect Recruitment"
+        logo: "https://assets.co-hire.com/cord-wordmark.svg"
+        url: "https://cord.co/candidate/account/u/candidate/27765"
+        target: "_blank"
+        
+  - name: Private Streaming Services
+    icon: "fas fa-code-branch"
+    items:
+      - name: "Plex Web App"
+        subtitle: "Stream Media via WebApp"
+        logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://app.plex.tv/desktop"
+        target: "_blank"
+      - name: "Plex Direct"
+        subtitle: "Stream Media Direct"
+        logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://plex.pknw1.co.uk/web"
+        target: "_blank"
+      - name: "Plex on SmartTV"
+        subtitle: "Setup any device to watch"
+        logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://plex.tv"
+        target: "_blank"
+      - name: "Requests"
+        subtitle: "Add any Movie/TV for free"
+        logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi.png"
+        #tag: "Requests"
+        url: "https://requests.pknw1.co.uk"
+        target: "_blank"
+  - name: Monitoring
+    icon: "fas fa-code-branch"
+    items:
+      - name: "External Status Checks"
+        subtitle: "general check for external facing services"
+        logo: "https://dwaves.de/wp-content/uploads/2018/12/uptime_robot.png"
+        url: "https://stats.uptimerobot.com/zv1PktoDMZ"
+        target: "_blank" 
+      - name: "Internal Status Checks"
+        subtitle: "full checks on system and service status"
+        logo: "https://strawberrysec.net/assets/images/HomeLab/Uptime_Kuma_Header.png"
+        #tag: "Monitoring"
+        url: "https://status.pknw1.co.uk"
+        target: "_blank"  
+

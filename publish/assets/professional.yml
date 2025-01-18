@@ -1,0 +1,117 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/search for icons options
+title: "Paul Kelleher"
+subtitle: "professional experience"
+documentTitle: "pknw1.co.uk - work" # Customize the browser tab text
+logo: "assets/images/pknw1-logo-128x77.png"
+header: true # Set to false to hide the header
+footer: 'pknw1'
+columns: "2" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+connectivityCheck: false # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example).
+defaults:
+  layout: columns # Either 'columns', or 'list'
+  colorTheme: dark 
+    #stylesheet:
+    #  - "/assets/style.css"
+theme: default # 'default' or one of the themes available in 'src/assets/themes'.
+# Here is the exhaustive list of customization parameters
+# However all value are optional and will fallback to default if not set.
+# if you want to change only some of the colors, feel free to remove all unused key.
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#232323"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#424242"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+    background-image: "/assets/your/light/bg.png" # prefix with your sub subpath if any (ex: /homer/assets/...)
+  dark:
+    highlight-primary: "#232323"
+    highlight-secondary: "#e5a00d"
+    highlight-hover: "#232323"
+    background: "#232323"
+    card-background: "#2b2b2b"
+    text: "#e5a00d"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#e5a00d"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#e5a00d"
+    link-hover: "#ff0000"
+    background-image: "/assets/your/dark/bg.png" # prefix with your sub subpath if any (ex: /homer/assets/...)
+
+message:
+  title: PKNW1
+  style: "is-warning"
+  background-image: "https://www.pknw1.co.uk/assets/images/icon-128x77.png"
+  icon: "fa fa-exclamation-triangle"
+  content:
+    <style>@import "/assets/css/index.css";</style
+    <script src="/assets/js/modal.js"></script>
+
+    <div>
+          <a id="myBtn" class="button">Link Button</a>
+
+    <div id="myModal" class="modal">
+      <a id="myBtn" class="button">Link Button</a>
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe src="https://www.pknw1.co.uk/professional.html" scrolling="none"></iframe>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+  # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
+  # mapping: # allows to map fields from the remote format to the one expected by Homer
+  #   title: 'id' # use value from field 'id' as title
+  #   content: 'value' # value from field 'value' as content
+  # refreshInterval: 10000 # Optional: time interval to refresh message
+  #
+  # Real example using chucknorris.io for showing Chuck Norris facts as messages:
+  # url: https://api.chucknorris.io/jokes/random
+  # mapping:
+  #   title: 'id'
+  #   content: 'value'
+  # refreshInterval: 10000
+  #style: "is-error"
+  #title: "Optional message!"
+  #icon: "fa fa-exclamation-triangle"
+  # The content also accepts HTML content, so you can add divs, images or whatever you want to make match your needs.
+  #content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: ""
+    icon: "fa-solid fa-rocket"
+    url: "#"
+  - name: ""
+    icon: "fa-solid fa-unlock"
+    url: "#users"
+  - name: ""
+    icon: "fa-solid fa-lock"
+    url: "https://admin.pknw1.co.uk"
+  - name: ""
+    icon: "fa-solid fa-address-book"
+    url: "#contact"
+  - name: ""
+    icon: "fa-solid fa-code"
+    url: "#dev"
+  - name: ""
+    icon: "fa-solid fa-laptop-file"
+    url: "#professional"
+  - name: ""
+    icon: "fa-solid fa-film"
+    url: "#notflix"
