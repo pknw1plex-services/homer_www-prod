@@ -12,6 +12,8 @@ connectivityCheck: false # whether you want to display a message when the apps a
 defaults:
   layout: columns # Either 'columns', or 'list'
   colorTheme: dark 
+stylesheet:
+  - "assets/css/contact.css"
 theme: default # 'default' or one of the themes available in 'src/assets/themes'.
 # Here is the exhaustive list of customization parameters
 # However all value are optional and will fallback to default if not set.
