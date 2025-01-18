@@ -69,9 +69,10 @@ jobs:
           echo "HOST *" > ~/.ssh/config
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
           git clone git@gitlab.com:www-content/homer_www.git 
-          ls -l
           cp -R publish/* homer_www
           cd homer_www
+          git config --global user.email "github@pknw1.co.uk"
+          git config --global user.name "www_homer"
           echo $TIMESTAMP > version
           git add . && git commit -m "version $TIMESTAMP" && git push
       - name: notify_netlify
