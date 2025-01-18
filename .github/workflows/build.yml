@@ -55,7 +55,7 @@ jobs:
           with-owner: 'false'
           string-case: 'lowercase'
       - name: Update Gitlab Content
-        id: 
+        id: gitlab-update 
         run: |
           git clone git@gitlab.com:www-content/homer_www.git netflify_gitlab
           echo $TIMESTAMP > netflify_gitlab/version
