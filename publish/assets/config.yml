@@ -51,18 +51,24 @@ message:
   background-image: "https://www.pknw1.co.uk/assets/images/icon-128x77.png"
   icon: "fa fa-exclamation-triangle"
   content:
-    <style>@import "/assets/css/index.css";</style
+    <style>@import "/assets/css/index.css";</style>
+        <div class="before-message">
+          <a href="#" class="button">Link Button</a>
+      <a href="https://www.pkn1.co.uk">
+        <img src="https://www.pknw1.co.uk/assets/images/icon-128x77.png?h=220"/>
+      </a>
+    </div>
+
     <iframe src="https://www.pknw1.co.uk" scrolling="none"></iframe>
     <div>
     <iframe src="https://www.pknw1.co.uk" scrolling="none"></iframe>
 
-    button
-          <a href="#" class="button">Link Button</a>
-
+    <div class="after-message">
+      <a href="#" class="button">Link Button</a>
       <a href="https://www.pkn1.co.uk">
         <img src="https://www.pknw1.co.uk/assets/images/icon-128x77.png?h=220"/>
       </a>
-
+    </div>
     </div>
   # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
   # mapping: # allows to map fields from the remote format to the one expected by Homer
