@@ -68,9 +68,10 @@ jobs:
           echo "${{ secrets.GITLAB_SSH }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
           echo "HOST *" > ~/.ssh/config
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
-          git clone git@gitlab.com:www-content/homer_www.git netflify_gitlab
-          cp -R publish/* netlify_gitlab
-          cd netlify_gitlab
+          git clone git@gitlab.com:www-content/homer_www.git 
+          ls -l
+          cp -R publish/* homer_www
+          cd homer_www
           echo $TIMESTAMP > version
           git add . && git commit -m "version $TIMESTAMP" && git push
       - name: notify_netlify
