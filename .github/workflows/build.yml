@@ -59,6 +59,8 @@ jobs:
         run: |
           if ! [[ -d ~/.ssh ]]; then mkdir ~/.ssh && chmod 700 ~/.ssh; fi
           echo "${{ secrets.GITLAB_SSH }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
+          echo "HOST *" > ~/.ssh/config
+          echo "StrictHostKeyChecking no" >> ~/.ssh/config
           git clone git@gitlab.com:www-content/homer_www.git netflify_gitlab
           echo $TIMESTAMP > netflify_gitlab/version
 
