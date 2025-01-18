@@ -39,7 +39,14 @@ jobs:
         run: |
           timestamp=$(date +%s)
           echo "TIMESTAMP=$timestamp" >> $GITHUB_OUTPUT
-          #docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${timestamp} .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${timestamp} .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:latest .
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${timestamp}
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:latest
+      - name: notify_docker
+        run: |
+          curl -d "version $TIMESTAMP container build" ntfy.sh/pknw1
+
           
   netlify_build:
     runs-on: ubuntu-latest
@@ -62,7 +69,13 @@ jobs:
           echo "HOST *" > ~/.ssh/config
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
           git clone git@gitlab.com:www-content/homer_www.git netflify_gitlab
-          echo $TIMESTAMP > netflify_gitlab/version
+          cp -R publish/* netlify_gitlab
+          cd netlify_gitlab
+          echo $TIMESTAMP > version
+          git add . && git commit -m "version $TIMESTAMP" && git push
+      - name: notify_netlify
+        run: |
+          curl -d "version $TIMESTAMP netlify build" ntfy.sh/pknw1
 
   docker_pull:
     runs-on: ubuntu-latest
