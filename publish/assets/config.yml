@@ -51,7 +51,7 @@ message:
   background-image: "https://www.pknw1.co.uk/assets/images/icon-128x77.png"
   icon: "fa fa-exclamation-triangle"
   content:
-    <style>@import "/assets/css/index.css";</style>
+    <style>@import "/assets/css/index.css?TS";</style>
 
 
     <iframe src="https://www.pknw1.co.uk" scrolling="none"></iframe>
