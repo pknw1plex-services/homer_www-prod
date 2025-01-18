@@ -7,11 +7,13 @@ documentTitle: "pknw1.co.uk - dev" # Customize the browser tab text
 logo: "assets/images/pknw1-logo-128x77.png"
 header: true # Set to false to hide the header
 footer: 'pknw1'
-columns: "3" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+columns: "4" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
 connectivityCheck: false # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example).
 defaults:
   layout: columns # Either 'columns', or 'list'
   colorTheme: dark 
+    stylesheet:
+      - "assets/css/dev.css"
 theme: default # 'default' or one of the themes available in 'src/assets/themes'.
 # Here is the exhaustive list of customization parameters
 # However all value are optional and will fallback to default if not set.
@@ -159,3 +161,108 @@ services:
         logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
         url: "https://app.plex.tv/desktop"
         target: "_blank" 
+  - name: Git Orgs
+    icon: "fa-brands fa-github"
+    items:
+      - name: "pknw1"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1"
+        target: "_blank" 
+      - name: "PKNW1DEMO"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/PKNW1DEMO"
+        target: "_blank" 
+      - name: "PKNW1PLEX"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/PKNW1PLEX"
+        target: "_blank" 
+      - name: "pknw1-archive"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1-archive"
+        target: "_blank" 
+      - name: "pknw1-automation"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1-automation"
+        target: "_blank" 
+      - name: "pknw1-example-business"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1-example-business"
+        target: "_blank" 
+      - name: "pknw1-enterprise"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1-enterprise"
+        target: "_blank" 
+      - name: "pknw1-development"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1-development"
+        target: "_blank" 
+      - name: "pknw1-cv"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1-cv"
+        target: "_blank" 
+      - name: "pknw1-support"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1-support"
+        target: "_blank" 
+      - name: "pknw1-tf"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1-tf"
+        target: "_blank" 
+      - name: "pknw1plex-services"
+        subtitle:
+        tag: git org
+        icon: "fa-brands fa-github-alt"
+        tagstyle: "is-small is-info"
+        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
+        url: "https://github.com/pknw1plex-services"
+        target: "_blank" 
+        
+
+
+
+
+

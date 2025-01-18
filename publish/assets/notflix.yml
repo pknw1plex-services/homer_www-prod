@@ -54,6 +54,7 @@ message:
     <style>@import "/assets/css/notflix.css";</style
     <div>
               <a href="https://requests.pknw1.co.uk" target="_new" class="button">Requests</a>
+              <a href="https://plex.pknw1.co.uk" target="_new" class="button">Plex</a>
 
     </div>
   # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
