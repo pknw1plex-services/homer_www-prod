@@ -12,8 +12,8 @@ connectivityCheck: false # whether you want to display a message when the apps a
 defaults:
   layout: columns # Either 'columns', or 'list'
   colorTheme: dark 
-    #stylesheet:
-    #  - "/assets/style.css"
+  stylesheet:
+    - "assets/css/notflix.css"
 theme: default # 'default' or one of the themes available in 'src/assets/themes'.
 colors:
   light:
@@ -51,10 +51,9 @@ message:
   background-image: "https://www.pknw1.co.uk/assets/images/icon-128x77.png"
   icon: "fa fa-exclamation-triangle"
   content:
-    <style>@import "/assets/css/index.css";</style
+    <style>@import "/assets/css/notflix.css";</style
     <div>
-        <img src="https://www.pknw1.co.uk/assets/images/icon-128x77.png?h=220"/>
-          <a href="https://requests.pknw1.co.uk" target="_new" class="button">Requests</a>
+              <a href="https://requests.pknw1.co.uk" target="_new" class="button">Requests</a>
 
     </div>
   # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.

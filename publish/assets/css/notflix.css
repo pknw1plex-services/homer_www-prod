@@ -1,0 +1,43 @@
+body #app .card.green {
+  background-color: #006600;
+  color: #00ff00;
+}
+
+body iframe {
+	width:100%;height:800px;margin-top:-150px;
+}
+
+.button {
+    background-color: #e5a00d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+body article {
+  width: 100%;
+  box-shadow: 0 0px 0px #232323;
+  }
+
+body .message-header {
+        display: block;
+}
+
+body .message-body {
+	background-color: #23232300; 
+}
+
+body .after-message {
+	background-color: #23232300; 
+  display: block;
+}
+
+
+
+{font-family: Arial, Helvetica, sans-serif;}
