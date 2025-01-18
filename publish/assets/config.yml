@@ -52,16 +52,10 @@ message:
   icon: "fa fa-exclamation-triangle"
   content:
     <style>@import "/assets/css/index.css";</style>
-        <div class="before-message">
-          <a href="#" class="button">Link Button</a>
-      <a href="https://www.pkn1.co.uk">
-        <img src="https://www.pknw1.co.uk/assets/images/icon-128x77.png?h=220"/>
-      </a>
-    </div>
+
 
     <iframe src="https://www.pknw1.co.uk" scrolling="none"></iframe>
     <div>
-    <iframe src="https://www.pknw1.co.uk" scrolling="none"></iframe>
 
     <div class="after-message">
       <a href="#" class="button">Link Button</a>
