@@ -27,7 +27,7 @@ jobs:
         run: |
           timestamp=$(date +%s)
           echo "TIMESTAMP=$timestamp" >> $GITHUB_OUTPUT
-          echo $TIMESTAMP > publish/version
+          echo $timestamp > publish/version
           sed -i 's/TS/$TIMESTAMP/g' publish/assets/config.yml
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${timestamp} .
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:latest .
