@@ -5,15 +5,15 @@ title: "PKNW1"
 subtitle: "User Apps"
 documentTitle: "pknw1.co.uk - User Apps" # Customize the browser tab text
 logo: "assets/images/pknw1-logo-128x77.png"
-header: false # Set to false to hide the header
+header: true # Set to false to hide the header
 footer: 'pknw1'
 columns: "4" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
 connectivityCheck: false # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example).
 defaults:
   layout: columns # Either 'columns', or 'list'
   colorTheme: dark 
-    #stylesheet:
-    #  - "/assets/style.css"
+stylesheet:
+  - "assets/css/users.css"
 theme: default # 'default' or one of the themes available in 'src/assets/themes'.
 colors:
   light:
