@@ -100,34 +100,6 @@ links:
     icon: "fa-solid fa-film"
     url: "#notflix"
 services:
-  - name: Web
-    icon: "fa-solid fa-html5"
-    items:
-      - name: "pknw1.co.uk"
-        subtitle: ""
-        tag: server, self-hosted
-        icon: "fa-solid fa-p"
-        tagstyle: "is-small is-info"
-        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
-        url: "https://pknw1.co.uk"
-        target: "_blank" 
-      - name: "www.pknw1.co.uk"
-        subtitle: ""
-        tag: server, self-hosted
-        icon: "fa-solid fa-k"
-        tagstyle: "is-small is-info"
-        #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
-        url: "https://www.pknw1.co.uk"
-        target: "_blank"
- #     - name: ""
- #       subtitle: ""
- #       tag: server, self-hosted
- #       icon: "fa-solid fa-html5"
- #       tagstyle: "is-small is-info"
- #       #logo: "https://cdn.freebiesupply.com/logos/large/2x/plex-logo-png-transparent.png"
- #       url: ""
- #       target: "_blank" 
-
   - name: \/\/ \/\/ \/\/ 
     icon: "fa-solid fa-globe"
     items:

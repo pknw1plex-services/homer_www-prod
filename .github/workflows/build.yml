@@ -45,7 +45,10 @@ jobs:
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:latest
       - name: notify_docker
         run: |
-          curl -d "version $TIMESTAMP container build" ntfy.sh/pknw1
+                -H "Title: Title here" \
+      -H "Content-Type: text/plain" \
+      -d  -H "Title: Docker Build" -H "Content-Type: text/plain" $'Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status}}' ntfy.sh/pknw1plex-dev
+          #curl -d "version $TIMESTAMP container build https://github.com/pknw1plex-services/homer_www-prod/actions/workflows/build.yml" ntfy.sh/pknw1
 
           
   netlify_build:
